@@ -23,30 +23,34 @@ Aplicación web desarrollada con **React** y **Tailwind CSS** que implementa la 
 
 ## 🛠 Instalación y uso
 
-### 1. Clonar el repositorio
-
-````bash
-git clone https://github.com/TU_USUARIO/pomodoro-timer.git
-cd pomodoro-timer
-
----
-
-### 2.Instalar dependencias
+1. Clonar el repositorio
 
 ```bash
-
-npm install
-npm run dev
+git clone https://github.com/TU_USUARIO/pomodoro-timer.git
+cd pomodoro-timer
+```
 
 ---
 
-### 📂Estructura del proyecto
+2. Instalar dependencias correr el proyecto
 
+```bash
+npm install
+npm run dev
+```
+
+---
+
+<details> <summary>📂Estructura del proyecto</summary>
+
+```
 src/
-  ├── App.jsx         # Componente principal
-  ├── main.jsx        # Punto de entrada de React
-  ├── index.css       # Estilos globales con Tailwind
-  └── ...
-tailwind.config.js    # Configuración de Tailwind
-postcss.config.js     # Configuración de PostCSS
-````
+├── App.jsx # Componente principal
+├── main.jsx # Punto de entrada de React
+├── index.css # Estilos globales con Tailwind
+└── ...
+tailwind.config.js # Configuración de Tailwind
+postcss.config.js # Configuración de PostCSS
+```
+
+</details>
