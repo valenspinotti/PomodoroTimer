@@ -12,6 +12,12 @@ function App() {
   const [isRunning, setIsRunning] = useState(false);
   const [mode, setMode] = useState('work'); // 'work', 'shortBreak', 'longBreak'
   const intervalRef = useRef(null);
+  const playAlarm = () => {
+  const alarm = new Audio('./public/alarm_soft.mp3');
+  alarm.play().catch(error => {
+    console.warn('Error playing alarm sound:', error);
+  });
+  }
 
   useEffect(() => {
     if (isRunning) {
@@ -19,6 +25,7 @@ function App() {
         setSecondsLeft(prev => {
           if (prev <= 1) {
             clearInterval(intervalRef.current);
+            playAlarm();
             handleSessionEnd();
             return 0;
           }
